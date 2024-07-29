@@ -19,13 +19,13 @@ package org.apache.jackrabbit.jca;
 import javax.jcr.Repository;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
-import javax.resource.ResourceException;
-import javax.resource.spi.ConnectionEvent;
-import javax.resource.spi.ConnectionEventListener;
-import javax.resource.spi.ConnectionRequestInfo;
-import javax.resource.spi.LocalTransaction;
-import javax.resource.spi.ManagedConnection;
-import javax.resource.spi.ManagedConnectionMetaData;
+import jakarta.resource.ResourceException;
+import jakarta.resource.spi.ConnectionEvent;
+import jakarta.resource.spi.ConnectionEventListener;
+import jakarta.resource.spi.ConnectionRequestInfo;
+import jakarta.resource.spi.LocalTransaction;
+import jakarta.resource.spi.ManagedConnection;
+import jakarta.resource.spi.ManagedConnectionMetaData;
 import javax.security.auth.Subject;
 import javax.transaction.xa.XAException;
 import javax.transaction.xa.XAResource;
@@ -47,7 +47,7 @@ public class JCAManagedConnection
      * The LocalTransactionAdapter wraps the internal XAResource and uses the XA Method's to
      * fulfill the LocalTransaction calls.
      */
-    private static class LocalTransactionAdapter implements javax.resource.spi.LocalTransaction {
+    private static class LocalTransactionAdapter implements jakarta.resource.spi.LocalTransaction {
 
         /**
          * Internal {@link Xid} implementation.
@@ -313,7 +313,7 @@ public class JCAManagedConnection
     }
 
     /**
-     * Returns an javax.resource.spi.LocalTransaction instance.
+     * Returns an jakarta.resource.spi.LocalTransaction instance.
      */
     public LocalTransaction getLocalTransaction()
             throws ResourceException {

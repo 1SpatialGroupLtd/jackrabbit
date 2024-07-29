@@ -23,7 +23,7 @@
   <parent>
     <groupId>org.apache.jackrabbit</groupId>
     <artifactId>jackrabbit-webapp-project</artifactId>
-    <version>2.22.0</version>
+    <version>2.22.0-JAKARTA</version>
     <relativePath>../jackrabbit-webapp-project</relativePath>
   </parent>
   <artifactId>jackrabbit-webapp</artifactId>

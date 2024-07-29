@@ -34,7 +34,7 @@
   <groupId>org.apache.jackrabbit</groupId>
   <artifactId>jackrabbit-parent</artifactId>
   <name>Jackrabbit Parent POM</name>
-  <version>2.22.0</version>
+  <version>2.22.0-JAKARTA</version>
   <packaging>pom</packaging>
 
   <issueManagement>
@@ -78,7 +78,25 @@
     <!-- see https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
     <project.build.outputTimestamp>1718023581</project.build.outputTimestamp>
     <minimalMavenBuildVersion>3.6.1</minimalMavenBuildVersion><!-- due to https://issues.apache.org/jira/browse/MNG-6059 -->
+    <distMgmtReleasesId>releases</distMgmtReleasesId>
+    <distMgmtReleasesName>Release Distribution Repository</distMgmtReleasesName>
+    <distMgmtReleasesUrl>${releases.url}</distMgmtReleasesUrl>
+    <distMgmtSnapshotsId>snapshots</distMgmtSnapshotsId>
+    <distMgmtSnapshotsName>Development Snapshot Repository</distMgmtSnapshotsName>
+    <distMgmtSnapshotsUrl>${snapshots.url}</distMgmtSnapshotsUrl>
   </properties>
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <name>Release Distribution Repository</name>
+      <url>${releases.url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Development Snapshot Repository</name>
+      <url>${snapshots.url}</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <url>http://jackrabbit.apache.org/</url>
   <inceptionYear>2004</inceptionYear>

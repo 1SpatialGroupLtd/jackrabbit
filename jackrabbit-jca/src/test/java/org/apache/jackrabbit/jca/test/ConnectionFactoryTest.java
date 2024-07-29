@@ -23,7 +23,7 @@ import javax.jcr.NoSuchWorkspaceException;
 import javax.jcr.Repository;
 import javax.jcr.Session;
 import javax.naming.Referenceable;
-import javax.resource.spi.ManagedConnection;
+import jakarta.resource.spi.ManagedConnection;
 import javax.transaction.xa.XAResource;
 
 import org.apache.jackrabbit.jca.JCAConnectionRequestInfo;

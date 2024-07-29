@@ -23,9 +23,9 @@ import javax.jcr.Repository;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 import javax.naming.Reference;
-import javax.resource.Referenceable;
-import javax.resource.ResourceException;
-import javax.resource.spi.ConnectionManager;
+import jakarta.resource.Referenceable;
+import jakarta.resource.ResourceException;
+import jakarta.resource.spi.ConnectionManager;
 
 import org.apache.jackrabbit.commons.repository.ProxyRepository;
 import org.apache.jackrabbit.commons.repository.RepositoryFactory;

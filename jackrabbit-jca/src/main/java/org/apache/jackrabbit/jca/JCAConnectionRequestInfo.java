@@ -18,7 +18,7 @@ package org.apache.jackrabbit.jca;
 
 import javax.jcr.Credentials;
 import javax.jcr.SimpleCredentials;
-import javax.resource.spi.ConnectionRequestInfo;
+import jakarta.resource.spi.ConnectionRequestInfo;
 import java.util.HashMap;
 import java.util.Map;
 
